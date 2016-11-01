@@ -1,0 +1,30 @@
+<header><h2>注册账户</h2></header>
+<form action="" name="registerName" id="registerName" method="post">
+    <div>
+        <input type="text" id="username" name="username" ng-model="updata.username" placeholder="请输入账户" required />
+        <p>账户：</p>
+    </div>
+    <div>
+        <input type="password" id="userpwd" name="userpwd" ng-model="updata.password" placeholder="请输入密码" required />
+        <p>密码：</p>
+    </div>
+    <!--需要进行ajax请求的按钮不能使用button或sumbit按钮，需要使用其他标签模拟一个按钮来操作-->
+    <!--当点击事件传参为true才会发送注册请求-->
+    <a id="confirmRegister" ng-click="fn1()">注册</a>
+    <!--<p class="help-block-require">
+        <label ng-show="registerName.username.$dirty&&registerName.username.$error.required">
+            *必填字段
+        </label>
+        <label ng-show="registerName.userpwd.$dirty&&registerName.userpwd.$error.required">
+            *必填字段
+        </label>
+    </p>
+    <p class="help-block">
+        <label ng-show="registerName.username.$error.pattern">
+            *请输入8位字符，只能包含字符、数字和下划线
+        </label>
+        <label ng-show="registerName.userpwd.$error.pattern">
+            *请输入以字母开头，长度在6~18之间，只能包含字符、数字和下划线的密码
+        </label>
+    </p>-->
+</form>

@@ -1,0 +1,16 @@
+<header><h2>日记管理</h2></header>
+<header></header>
+<form action="" name="loginName" id="loginName">
+    <input type="text" id="username" name="username" placeholder="请输入账户" ng-model="updata.username" required />
+    <input type="{{appearPwd?'text':'password'}}" id="userpwd" name="userpwd" placeholder="请输入密码" ng-model="updata.password" required  />
+    <p class="appearpassword">
+        <input type="checkbox" id="appearpwd" ng-model="appearPwd" />
+        <label for="appearpwd">显示密码</label>
+    </p>
+    <p class="markpassword">
+        <input type="checkbox" id="markpwd"  ng-model="check"  ng-checked="check"/>
+        <label for="markpwd">七天免登录<!--自动登录--></label>
+    </p>
+    <a id="login" ng-click="fn()">登录</a>
+</form>
+<a ui-sref="b" id="register">注册</a>

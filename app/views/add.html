@@ -1,0 +1,20 @@
+<nav class="navbar navbar-inverse" role="navigation" style="background-color: #a90506;">
+     <div class="container"> 
+     <button type="button" class="btn btn-link navbar-btn glyphicon glyphicon-chevron-left"></button>
+     <button type="button" class="pull-right btn btn-link navbar-btn glyphicon glyphicon-ok" ng-click="add()"></button>
+      </div><!-- /.container-fluid -->
+    </nav>
+<div class="container"> 
+    <form role="form" class="ng-pristine ng-valid"> 
+  <div class="form-group"> 
+    <label>标题</label> 
+    <input type="text" class="form-control input-lg" ng-model="updata.title"> 
+  </div>
+  <div class="form-group"> 
+    <label for="exampleInputPassword1">内容</label> 
+    <textarea class="form-control input-lg" rows="5" ng-model="updata.content"></textarea> 
+  </div>
+    <button class="label label-success" ng-repeat="x in data">{{x.tag}}</button>
+  </form> 
+  </div>
+

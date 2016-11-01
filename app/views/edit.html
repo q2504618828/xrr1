@@ -1,0 +1,22 @@
+ <nav class="navbar navbar-inverse" role="navigation" style="background-color: #a90506;">
+     <div class="container"> 
+       <button type="button"  class="btn btn-link navbar-btn glyphicon glyphicon-chevron-left"></button>
+       <button type="button" class="pull-right btn btn-link navbar-btn glyphicon glyphicon-trash" ng-click="edit()"></button>
+       <button type="button" class="pull-right btn btn-link navbar-btn glyphicon glyphicon-edit" ng-click="back()"></button> 
+       </div><!-- /.container-fluid --> 
+      </nav>
+
+<div class="container"> 
+  <div class="page-header"> 
+     <h1>
+      <input type="text" class="form-control input-lg" ng-model="eddata.title"> 
+       <small>2016-10-21</small>
+     </h1> 
+   <div>
+   <span class="label label-success">标签</span>
+ </div> 
+</div> 
+<p> <textarea class="form-control input-lg" rows="5" ng-model="eddata.content"></textarea> </p> 
+
+</div> 
+<button type="button" class="pull-right btn btn-link navbar-btn glyphicon glyphicon-edit" ng-click="save()">保存</button> 
